@@ -3,8 +3,7 @@ const path = require("path");
 
 const config = {
   entry: {
-    app: "./index.js",
-    db: "./db.js"
+    app: "./src/db.js",
   },
   output: {
     path: __dirname + "/dist",
@@ -16,6 +15,12 @@ const config = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"]
+          }
+        }
       }
     ]
   },
