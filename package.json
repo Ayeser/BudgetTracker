@@ -31,7 +31,7 @@
     "mongoose": "^5.5.15",
     "morgan": "^1.9.1",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-pwa-manifest": "^4.2.0"
   }
 }
